@@ -47,8 +47,8 @@ const LoginPage = () => {
     });
   };
   return (
-    <div className="p-6 max-w-xl mx-auto border border-gray-200 dark:border-[#30363d] bg-white dark:bg-[#161b22] rounded-2xl shadow-sm mt-10 flex flex-col items-center justify-center">
-      <h2 className="text-2xl font-bold mb-6 text-[#3B7597] dark:text-[#6FD1D7]">
+    <div className="p-6 max-w-xl mx-auto border border-gray-200 dark:border-[#30363d] bg-white dark:bg-[#161b22] rounded-2xl shadow-sm mt-12 mb-16 flex flex-col items-center justify-center">
+      <h2 className="text-2xl font-bold mb-6 text-green-500 dark:text-[#6FD1D7]">
         Log In here
       </h2>
 
@@ -127,7 +127,7 @@ const LoginPage = () => {
 
           <div className="flex justify-center gap-2 mt-2">
             <Button
-              className="w-full rounded-xl text-sm font-semibold text-white bg-[#3B7597] hover:bg-[#2e5b77] dark:bg-[#6FD1D7] dark:text-gray-950 dark:hover:bg-[#5bc0c6] active:scale-[0.98] transition-all py-2.5 shadow-sm shadow-[#3B7597]/10"
+              className="w-full rounded-xl text-sm font-semibold text-white bg-green-500 hover:bg-green-600 dark:bg-[#6FD1D7] dark:text-gray-950 dark:hover:bg-[#5bc0c6] active:scale-[0.98] transition-all py-2.5 shadow-sm shadow-[#3B7597]/10"
               type="submit"
             >
               Login
@@ -144,7 +144,7 @@ const LoginPage = () => {
 
           <p className="text-center">
             Don't hava an account?{" "}
-            <Link className="underline text-blue-500" href={"/signup"}>
+            <Link className="underline text-green-500" href={"/signup"}>
               Register
             </Link>
           </p>
