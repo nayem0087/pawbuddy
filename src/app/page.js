@@ -3,6 +3,7 @@ import BestServices from "@/components/BestService";
 import HappyPetsSection from "@/components/HappyPets";
 import PetCareTips from "@/components/PetCareTips";
 import PetStats from "@/components/PetStats";
+import SuccessStories from "@/components/SuccesStories";
 import WhyAdoptPets from "@/components/WhyAdpotPets";
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
         <Banner/>
         {/* <Featured/> */}
         <WhyAdoptPets/>
-        {/* <SuccessStories/> */}
+        <SuccessStories/>
         <PetCareTips/>
         <HappyPetsSection/>
         <PetStats/>
