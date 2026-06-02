@@ -52,10 +52,8 @@ export function Navbar() {
             </svg>
           </button>
           <div className="flex items-center gap-1.5">
-            <Avatar>
-              <Avatar.Image alt="petlogo" src={"/petLogo.avif"} />
-            </Avatar>{" "}
-            <h2 className="font-bold">PetAdopt</h2>
+            
+            <h2 className="font-bold text-4xl text-green-500">PewBuddy</h2>
           </div>
         </div>
 
@@ -67,8 +65,8 @@ export function Navbar() {
               href="/" 
               className={`no-underline transition-all text-sm ${
                 isHomeActive 
-                  ? "font-black underline underline-offset-4 decoration-cyan-500 text-cyan-500! dark:text-cyan-400!" 
-                  : "font-medium text-gray-500 dark:text-gray-400 hover:text-cyan-500"
+                  ? "font-black underline underline-offset-4 decoration-green-500 text-green-500! dark:text-green-400!" 
+                  : "font-medium text-gray-500 dark:text-gray-400 hover:text-green-500"
               }`}
             >
               Home
@@ -80,8 +78,8 @@ export function Navbar() {
               href="/all-pets" 
               className={`no-underline transition-all text-sm ${
                 isAllPetsActive 
-                  ? "font-black underline underline-offset-4 decoration-cyan-500 text-cyan-500! dark:text-cyan-400!" 
-                  : "font-medium text-gray-500 dark:text-gray-400 hover:text-cyan-500"
+                  ? "font-black underline underline-offset-4 decoration-green-500 text-green-500! dark:text-green-400!" 
+                  : "font-medium text-gray-500 dark:text-gray-400 hover:text-green-500"
               }`}
             >
               Pets
@@ -95,14 +93,14 @@ export function Navbar() {
           {user && <DropdownCompo user={user}></DropdownCompo>}
 
           {!user && (
-            <div>
+            <div className="flex items-center gap-2">
               <Link className={"no-underline"} href={"/login"}>
-                <Button size="sm" className={"mr-1.5"}>
+                <Button size="sm" className="bg-green-500 text-white hover:bg-green-600">
                   Login
                 </Button>
               </Link>
               <Link className={"no-underline"} href={"/signup"}>
-                <Button size="sm" className={"mr-1.5"}>
+                <Button size="sm" className="bg-green-500 text-white hover:bg-green-600">
                   Sign Up
                 </Button>
               </Link>
@@ -119,7 +117,7 @@ export function Navbar() {
               <Link 
                 color="foreground"
                 href="/" 
-                className={`block py-2 text-sm ${isHomeActive ? "font-bold text-cyan-500" : ""}`}
+                className={`block py-2 text-sm ${isHomeActive ? "font-bold text-green-500" : ""}`}
               >
                 Home
               </Link>
@@ -128,7 +126,7 @@ export function Navbar() {
               <Link 
                 color="foreground"
                 href="/all-pets" 
-                className={`block py-2 text-sm ${isAllPetsActive ? "font-bold text-cyan-500" : ""}`}
+                className={`block py-2 text-sm ${isAllPetsActive ? "font-bold text-green-500" : ""}`}
               >
                 All Pets
               </Link>
